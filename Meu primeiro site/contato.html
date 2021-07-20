@@ -24,15 +24,17 @@
         <form>
             <h3>Mande uma mensagem:</h3>
             <label for="nome">Nome</label><br>
-            <input type="text" id="nome">
+            <input type="text" id="nome" onkeyup= 'validaNome()'>
+            <div id='txtNome'></div>
             <br>
             <br>
             <label for="email">Email</label><br>
-            <input type="email" id="email"><br>
+            <input type="email" id="email" onkeyup = 'validaEmail()'><br>
+            <div id='txtEmail'></div>
             <br>
             <br>
-            <label for="Comentário">Comentário</label><br>
-            <textarea name="Comentário" id="Comentário" cols="30" rows="10"></textarea><br>
+            <label for="comentario">Comentário</label><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br>
             <button>Enviar</button>
         </form>
     </div>
@@ -62,6 +64,6 @@
               Todos os direitos reservados a: Gustavo Moraes &copy
             </p>
         </footer>
-    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
